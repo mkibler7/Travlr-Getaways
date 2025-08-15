@@ -3,6 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require('cors');
+
+
 
 var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
@@ -25,11 +28,34 @@ handlebars.registerPartials(__dirname + '/app_server/views/partials');
 
 app.set('view engine', 'hbs');
 
+
+
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// app.use(cors());
+
+// put this BEFORE any routes
+app.use(cors({ 
+  origin: 'http://localhost:4200',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Origin','X-Requested-With','Content-Type','Accept','Authorization'] 
+}));
+
+
+// // Enable CORS
+// app.use('/api', (req, res, next) => {
+//   res.header('Access-Control-Allow-Origin', 'https://localhost:4200');
+//   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+//   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+//   if (req.method === 'OPTIONS') {
+//     return res.sendStatus(204); // important: satisfy the preflight
+//   }
+//   next();
+// });
 
 // Connect routes to controllers
 app.use('/', indexRouter);
@@ -37,6 +63,7 @@ app.use('/users', usersRouter);
 app.use('/travel', travelRouter);
 app.use('/rooms', roomRouter);
 app.use('/api', apiRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
