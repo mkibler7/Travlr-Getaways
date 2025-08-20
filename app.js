@@ -15,26 +15,31 @@ var apiRouter = require('./app_api/routes/index');
 
 var handlebars = require('hbs');
 
-// Bring in the database
-require('./app_api/models/db')
-
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'app_server', 'views'));
+app.set('view engine', 'hbs');
 
 // register handlebars partials (https://www.npmjs.com/package/hbs)
 handlebars.registerPartials(__dirname + '/app_server/views/partials');
 
-app.set('view engine', 'hbs');
+// Wire in our authentication
+var passport = require('passport');
+require('./app_api/config/passport');
 
+// Bring in the database module
+require('./app_api/models/db');
 
+// Bring in our environment file, environment variable capabilites
+require('dotenv').config();
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(passport.initialize());
 // app.use(cors());
 
 // put this BEFORE any routes
@@ -64,6 +69,14 @@ app.use('/travel', travelRouter);
 app.use('/rooms', roomRouter);
 app.use('/api', apiRouter);
 
+// Catch unauthorized error and create 401
+app.use((err, req, res, next) => {
+  if(err.name === 'UnauthorizedError') {
+    res
+      .status(401)
+      .json({"message": err.name + ": " + err.message});
+  }
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

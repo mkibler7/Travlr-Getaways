@@ -5,6 +5,7 @@ import { TripCard } from '../trip-card/trip-card';
 import { Trip } from '../models/trip';
 import { TripData } from '../services/trip-data';
 import { Router } from '@angular/router';
+import { Authentication } from '../services/authentication';
 
 
 @Component({
@@ -21,12 +22,19 @@ export class TripListing {
   trips!: Trip[];
   message: string = '';
 
-  constructor(private tripDataService: TripData, private router: Router) {
+  constructor(
+    private tripDataService: TripData, 
+    private router: Router,
+    private authenticationService: Authentication) {
     console.log('trip-listing constructor');
   }
 
   public addTrip(): void {
     this.router.navigate(['add-trip']);
+  }
+
+    public isLoggedIn() {
+    return this.authenticationService.isLoggedIn();
   }
 
   private getStuff(): void {
