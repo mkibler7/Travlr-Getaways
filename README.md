@@ -11,19 +11,19 @@ Both clients utilize the same Express REST API and MongoDB database.
 ## Features
 
 Public Webstie (Visitors)
-  ✅ Home page with brand/intro content
-  ✅ Trips page showing all available trips with images, price, length, dates
-  ✅ Contact information page
+  ✅ Home page with brand/intro content  
+  ✅ Trips page showing all available trips with images, price, length, dates  
+  ✅ Contact information page  
   ✅ Server-rendered via Pug templates for fast first paint and SEO-friendly HTML  
   <img width="1316" height="1257" alt="image" src="https://github.com/user-attachments/assets/c0466a48-418d-4b70-a32c-accb50c12abe" />
   <img width="1309" height="1306" alt="image" src="https://github.com/user-attachments/assets/580d5ebe-5073-45c6-b90e-95376a267c60" />
   <img width="1315" height="1214" alt="image" src="https://github.com/user-attachments/assets/010ac7a3-d15a-4985-b642-c0e0da2fe02f" />
 
 Admin SPA (Angular)
-  ✅ Trip listing with live data from API
-  ✅ Create trip form (validates and persists to MongoDB)
-  ✅ Image rendering from src/assets/images
-  ✅ Dev proxy so the SPA can call /api/* without CORS issues
+  ✅ Trip listing with live data from API  
+  ✅ Create trip form (validates and persists to MongoDB)  
+  ✅ Image rendering from src/assets/images  
+  ✅ Dev proxy so the SPA can call /api/* without CORS issues  
 
  <img width="1405" height="1164" alt="image" src="https://github.com/user-attachments/assets/52488df6-c485-455a-829d-49a3ca28e159" />
  <img width="1410" height="419" alt="image" src="https://github.com/user-attachments/assets/7916735b-2fbe-4fe1-90e4-c24f8a48ee3c" />
