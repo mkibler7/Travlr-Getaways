@@ -50,9 +50,9 @@ Admin SPA (Angular)
   8. Run npm install
   9. Run ng serve
   10. You should now be able to visit [http](http://localhost:4200/) to see the admin SPA.
-  11. For testing purposes:
-          name:      Joe Smith
-          email:     jsmith9867@example.com
+  11. For testing purposes:  
+          name:      Joe Smith  
+          email:     jsmith9867@example.com  
           password:  SomeSpecialMagicString!
 
 ## Contact Info
