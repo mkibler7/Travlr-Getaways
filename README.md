@@ -10,7 +10,7 @@ Both clients utilize the same Express REST API and MongoDB database.
 
 ## Features
 
-Public Webstie (Visitors)
+Public Webstie (Visitors)  
   ✅ Home page with brand/intro content  
   ✅ Trips page showing all available trips with images, price, length, dates  
   ✅ Contact information page  
@@ -19,7 +19,7 @@ Public Webstie (Visitors)
   <img width="1309" height="1306" alt="image" src="https://github.com/user-attachments/assets/580d5ebe-5073-45c6-b90e-95376a267c60" />
   <img width="1315" height="1214" alt="image" src="https://github.com/user-attachments/assets/010ac7a3-d15a-4985-b642-c0e0da2fe02f" />
 
-Admin SPA (Angular)
+Admin SPA (Angular)  
   ✅ Trip listing with live data from API  
   ✅ Create trip form (validates and persists to MongoDB)  
   ✅ Image rendering from src/assets/images  
