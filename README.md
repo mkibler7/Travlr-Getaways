@@ -1,4 +1,6 @@
 # Travlr Getaways
+A full-stack travel booking application built with the MEAN stack, featuring an admin dashboard and visitor-facing site.
+
 Public Website + Admin SPA + Express/Mongo API
 
 This was an application made by following the textbook in my CS-465 fullstack computer programming course at SNHU. 
