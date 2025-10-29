@@ -18,9 +18,9 @@ Public Webstie (Visitors)
   ✅ Contact information page  
   ✅ Server-rendered via Pug templates
 
-  ![image](https://github.com/user-attachments/assets/c0466a48-418d-4b70-a32c-accb50c12abe)
-  ![image](https://github.com/user-attachments/assets/580d5ebe-5073-45c6-b90e-95376a267c60)
-  ![image](https://github.com/user-attachments/assets/010ac7a3-d15a-4985-b642-c0e0da2fe02f)
+  ![Home](https://github.com/user-attachments/assets/c0466a48-418d-4b70-a32c-accb50c12abe)
+  ![Home](https://github.com/user-attachments/assets/580d5ebe-5073-45c6-b90e-95376a267c60)
+  ![Home](https://github.com/user-attachments/assets/010ac7a3-d15a-4985-b642-c0e0da2fe02f)
   
 
 Admin SPA (Angular)  
@@ -29,10 +29,10 @@ Admin SPA (Angular)
   ✅ Image rendering from src/assets/images  
   ✅ Dev proxy so the SPA can call /api/* without CORS issues  
 
- ![image](https://github.com/user-attachments/assets/52488df6-c485-455a-829d-49a3ca28e159)
- ![image](https://github.com/user-attachments/assets/2466ec35-c81f-485d-b932-9ec0ba432da9)
- ![image](https://github.com/user-attachments/assets/f6fe150f-06aa-4b4d-8d28-3ddd271b5009)
- ![image](https://github.com/user-attachments/assets/794e1e82-6f7a-425e-aa1e-b0fca1e3138d)
+ ![Trips](https://github.com/user-attachments/assets/52488df6-c485-455a-829d-49a3ca28e159)
+ ![Admin](https://github.com/user-attachments/assets/2466ec35-c81f-485d-b932-9ec0ba432da9)
+ ![Admin](https://github.com/user-attachments/assets/f6fe150f-06aa-4b4d-8d28-3ddd271b5009)
+ ![Admin](https://github.com/user-attachments/assets/794e1e82-6f7a-425e-aa1e-b0fca1e3138d)
 
 ## Tech Stack
   - Angular (standalone components, HttpClient, RxJS)
