@@ -32,6 +32,7 @@ Admin SPA (Angular)
  <img width="1402" height="1269" alt="image" src="https://github.com/user-attachments/assets/2466ec35-c81f-485d-b932-9ec0ba432da9" />
  <img width="1404" height="725" alt="image" src="https://github.com/user-attachments/assets/f6fe150f-06aa-4b4d-8d28-3ddd271b5009" />
  <img width="1406" height="1255" alt="image" src="https://github.com/user-attachments/assets/794e1e82-6f7a-425e-aa1e-b0fca1e3138d" />
+ ![image](https://github.com/user-attachments/assets/794e1e82-6f7a-425e-aa1e-b0fca1e3138d)
 
 ## Tech Stack
   - Angular (standalone components, HttpClient, RxJS)
