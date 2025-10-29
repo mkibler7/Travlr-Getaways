@@ -30,7 +30,6 @@ Admin SPA (Angular)
   ✅ Dev proxy so the SPA can call /api/* without CORS issues  
 
  ![image](https://github.com/user-attachments/assets/52488df6-c485-455a-829d-49a3ca28e159)
- ![image](https://github.com/user-attachments/assets/794e1e82-6f7a-425e-aa1e-b0fca1e3138d)
  ![image](https://github.com/user-attachments/assets/2466ec35-c81f-485d-b932-9ec0ba432da9)
  ![image](https://github.com/user-attachments/assets/f6fe150f-06aa-4b4d-8d28-3ddd271b5009)
  ![image](https://github.com/user-attachments/assets/794e1e82-6f7a-425e-aa1e-b0fca1e3138d)
