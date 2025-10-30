@@ -34,7 +34,7 @@ Admin SPA (Angular)
  ![Admin](https://github.com/user-attachments/assets/f6fe150f-06aa-4b4d-8d28-3ddd271b5009)
  ![Admin](https://github.com/user-attachments/assets/794e1e82-6f7a-425e-aa1e-b0fca1e3138d)
 
-  ## What I Learned
+## What I Learned
 
 - How to make everything come together
 - Angular framework
