@@ -65,4 +65,4 @@ Admin SPA (Angular)
 
 ## Contact Info
 Created by **Michael Kibler** (CS-465 Fullstack Textbook Project)
-[LinkedIn](https://www.linkedin.com/in/michael-kibler-11369519b/) | [Email](mailto:mpkibler7@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/michael-kibler-11369519b/) | [Email](mailto:michael.kibler.dev@gmail.com)
